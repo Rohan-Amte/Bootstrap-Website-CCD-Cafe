@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+   <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        #footer a {
+            text-decoration: none;
+            color: lightslategray;
+        }
+
+        /* nav .container {
+            border-style: none none outset none;
+        } */
+
+        #cards .card, #slider, .socialmedia a {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        nav .container{
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .nav-pills .nav-link.active1,
+        .nav-pills .show > .nav-link{
+            background-color: red;
+        }
+   
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar bg-body navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand text-danger">
+                <img src="Images/cafe-coffee-day-logo.png" width="70" height="70" alt="logo">
+                <!-- <span>Cafe Coffee Day</span> -->
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsenavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="collapsenavbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown"><a class="nav-link text-danger dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">Cafe Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">FOOD FOR MORE</a></li>
+                            <li><a href="" class="dropdown-item">HOT CLASSICS</a></li>
+                            <li><a href="" class="dropdown-item">ALL-TIME-CHILLERS</a></li>
+                            <li><a href="" class="dropdown-item">ALL-DAY-DELIGHTS</a></li>
+                            <li><a href="" class="dropdown-item">SWEET-TOOTH X 32</a></li>
+                            <li><a href="" class="dropdown-item">NUTRITIONAL INFO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="">E-shop<img
+                                src="https://www.cafecoffeeday.com/sites/all/themes/ccd/assets/images/cafe-menu/cart-icon.gif"
+                                width="40px" alt=""> </a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="">Order Online</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="">Cafe Finder</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="">Mobile App</a></li>
+                </ul>
+
+                <!-- <div id="rightlogo">
+                    <img src="Images/password1--v1.png" width="30" height="30" alt="">
+                    <img src="Images/user-group-man-woman.png" width="30" height="30" alt="">
+                    <img src="Images/appointment-reminders--v1.png" width="30" height="30" alt="">
+                </div> -->
+
+            </div>
+            <div class="rightlogo collapse navbar-collapse justify-content-end" >
+                <ul class="navbar-nav" >
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="Images/password1--v1.png" width="30" height="30" alt=""></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="Images/user-group-man-woman.png" width="30" height="30" alt=""></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="Images/appointment-reminders--v1.png" width="30" height="30" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><br><br><br>
+    <hr>
+    <!-- Slider -->
+    <div class="container">
+        <div id="slider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-slide-to="0" data-bs-target="#slider"></button>
+                <button type="button" class="active" data-bs-slide-to="1" data-bs-target="#slider"></button>
+                <button type="button" class="active" data-bs-slide-to="2" data-bs-target="#slider"></button>
+                <button type="button" class="active" data-bs-slide-to="3" data-bs-target="#slider"></button>
+                <button type="button" class="active" data-bs-slide-to="4" data-bs-target="#slider"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/slide1.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item aciive">
+                    <img src="Images/slide2.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item aciive">
+                    <img src="Images/slide3.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item aciive">
+                    <img src="Images/slide4.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item aciive">
+                    <img src="Images/slide5.jpg" class="d-block w-100" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- middle nav bar as nav-pills -->
+    <div class="container "><br>
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item  " ><a class="nav-link  active " data-bs-toggle="pill" href="#HOTCLASSICS">HOT
+                    CLASSICS</a></li>
+            <li class="nav-item"><a class="nav-link " data-bs-toggle="pill"
+                    href="#ALLTIMECHILLERS">ALL-TIME-CHILLERS</a></li>
+            <li class="nav-item"><a class="nav-link " data-bs-toggle="pill"
+                    href="#ALLDAYDELIGHTS">ALL-DAY-DELIGHTS</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#SWEETTOOTHX32">SWEET-TOOTH
+                    X 32</a></li>
+            <li class="nav-item"><a class="nav-link " data-bs-toggle="pill"
+                    href="#NUTRITIONALINFO">NUTRITIONAL INFO</a></li>
+
+        </ul>
+        <hr>
+        <div class="tab-content">
+            <div id="HOTCLASSICS" class="container tab-pane active ">
+                <img src="Images/HOT CLASSICS.jpg" class="d-block w-100" alt="">
+            </div>
+            <div id="ALLTIMECHILLERS" class="container tab-pane">
+                <img src="Images/1st ALL TIME CHILLERS.jpg" class="d-block w-100" alt="">
+            </div>
+            <div id="ALLDAYDELIGHTS" class="container tab-pane">
+                <img src="Images/ALL DAY DELIGHTS.jpg" class="d-block w-100" alt="">
+            </div>
+            <div id="SWEETTOOTHX32" class="container tab-pane">
+                <img src="Images/SWEET TOOTH X32.jpg" class="d-block w-100" alt="">
+            </div>
+            <div id="NUTRITIONALINFO" class="container tab-pane">
+                <img src="Images/BEVERAGE nutritional info.jpg" class="d-block w-100 " alt="">
+            </div>
+            <hr>
+        </div>
+    </div>
+    <!-- Cards -->
+
+    <div class="container" id="cards">
+        <h1 style="text-align: center; letter-spacing: 25px; text-shadow: 2px 2px 5px red;">Our Products</h1>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" style="width: 400px; height: 1000px;">
+                    <img class="card-img-top" src="Images/DARK FOREST COFFEE POWDER (PACK OF 1).webp" width="524"
+                        height="560" alt="">
+                    <div class="card-body">
+                        <h3>DARK FOREST COFFEE POWDER (PACK OF 1)</h3>
+                        <p>Relish a full-bodied single origin coffee from the dense Kathlekhan estate. Sourced from the
+                            best in the business, this dark forest yield is one of the most sought coffee powders across
+                            the globe. </p>
+                        <p> This rich and aromatic coffee powder is quite a hit as a gifting option too.</p>
+                        <p><strong>This is not an instant coffee.</strong></p>
+                        <p><strong>For best result please use a Plunger to brew this coffee.</strong></p>
+                        <a href="#" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#mymodal">Get Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="width: 400px; height: 1000px;">
+                    <img class="card-img-top" src="Images/COFFEE CAPSULE ESTATE BLEND (PACK OF 2).webp" width="524"
+                        height="560" alt="">
+                    <div class="card-body">
+                        <h3>COFFEE CAPSULE ESTATE BLEND (PACK OF 2)</h3>
+                        <p>Prepare authentic Italian coffee at home with Wakecup capsules. It's a blend of top quality
+                            Arabica and Robusta coffee, enriched with dense, rich notes with excellent body. </p>
+                        <p> Estate blend creates an extraordinary smooth coffee while the aroma lingers on for a long
+                            time. Each capsule contains the world's finest ground coffee that is perfectly packed to
+                            give an intense taste and aroma.</p>
+                        <p><strong>To be used with Automatic Coffee Makers only.</strong></p>
+
+                        <a href="#" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#mymodal">Get Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="width: 400px; height: 1000px;">
+                    <img class="card-img-top" src="Images/DOUBLE CHOCO CHIP COOKIES (PACK OF 2).webp" width="524"
+                        height="560" alt="">
+                    <div class="card-body">
+                        <h3>DOUBLE CHOCO CHIP COOKIES (PACK OF 2)</h3>
+                        <p>This chocolate lover's absolute delight. </p>
+                        <p> Welcome to the incredibly, crumbly goodness of the chocolate world! </p>
+                        <p>This chocolate lover's absolute delight.</p>
+                        <p><strong>Don't forget to try our other quick bites available online!</strong></p>
+                        <br><br><br>
+                        <!-- <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#mymodal">Get Buy</a> -->
+                        <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#mymodal" >Get Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <div style="text-align: right;"><button type="button" class="btn btn-info">See All</button></div>
+        <hr>
+    </div>
+    <div class="container d-flex justify-content-center ">
+        <div class="socialmedia">
+            <a href=""><img src="Images/instagram.png" width="50" height="50" alt=""></a>
+            <a href=""><img src="Images/facebook.png" width="50" height="50" alt=""></a>
+            <a href=""><img src="Images/twitter.png" width="50" height="50" alt=""></a>
+            <a href=""><img src="Images/youtube.png" width="50" height="50" alt=""></a>
+            <a href=""><img src="Images/pinterest.png" width="50" height="50" alt=""></a>
+        </div>
+
+    </div>
+    <div class="container" id="footer">
+        <hr>
+        <div class="row">
+            <div class="col-lg-3">
+                <a href="">
+                    <p><strong>Quick Links</strong></p>
+                </a>
+                <a href="">
+                    <p>Cafe Menu</p>
+                </a>
+                <a href="">
+                    <p>Cafe Finder/Cafe Locator</p>
+                </a>
+                <a href="">
+                    <p>Customer Care</p>
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="">
+                    <p><strong>Shop</strong></p>
+                </a>
+                <a href="#">
+                    <p>Coffee Mugs & Cups</p>
+                </a>
+                <a href="#">
+                    <p>Coffee Makers & Weakcups</p>
+                </a>
+                <a href="#">
+                    <p>Gifts</p>
+                </a>
+
+            </div>
+            <div class="col-lg-3">
+                <a href="">
+                    <p><strong>Business</strong></p>
+                </a>
+                <a href="#">
+                    <p>Lease Enquary</p>
+                </a>
+                <a href="#">
+                    <p>Advertise With us</p>
+                </a>
+                <a href="#">
+                    <p>Coffee Vending Machine</p>
+                </a>
+                <a href="#">
+                    <p>Outdoor Catering Service</p>
+                </a>
+                <a href="#">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="">
+                    <p><strong>About us</strong></p>
+                </a>
+                <a href="#">
+                    <p>Awards</p>
+                </a>
+                <a href="#">
+                    <p>Business</p>
+                </a>
+                <a href="#">
+                    <p>Governance</p>
+                </a>
+                <a href="#">
+                    <p>Bean to Cup</p>
+                </a>
+                <a href="#">
+                    <p>News & Events</p>
+                </a>
+                <a href="#">
+                    <p>Careers</p>
+                </a>
+                <a href="#">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="mymodal">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>DARK FOREST COFFEE POWDER (PACK OF 1)</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img src="Images/DARK FOREST COFFEE POWDER (PACK OF 1).webp" class="img-fluid"><br><br>
+                                    <h5>More Information</h5>
+                                   <p style="text-align: justify;">Relish a full-bodied single origin coffee from the dense Kathlekhan estate. Sourced from the best in the business, this dark forest yield is one of the most sought coffee powders across the globe. </p>
+                                   <p>This rich and aromatic coffee powder is quite a hit as a gifting option too.</p>
+                                   <p><strong>This is not an instant coffee.</strong></p>
+                                </div>
+                                <div class="col-lg-6"><br><br>
+                                    <h2>DARK FOREST COFFEE POWDER <br>(PACK OF 1)</h2>
+                                    <p style="color: red;">In Stock</p>
+                                    <pre><a href="#"><span style="background-color: red; color: white;">* 4.8</span>  9 Reviews  | Add Your Review</a> </pre> 
+                                   <p style="color: red; font-size:xx-large;"><strong>Rs. 300</strong> </p> 
+                                   <hr>
+                                   <p><strong> Single Origin Coffee</strong></p>
+                                   <pre>weight      : 200gm composition
+composition : 100% Arabica 
+                                   </pre>
+                                   <hr>
+                                   <form>
+                                    <p>Check Serviceability</p>
+                                    <input type="text" placeholder="Enter Pin Code"> <button class="btn-danger">Check</button>
+                                   </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
